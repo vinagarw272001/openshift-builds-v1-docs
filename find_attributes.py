@@ -19,7 +19,7 @@ attrs=set()
 # replace "pipelines" with one or more directories with ADOC files to scan
 # you can use / to list directories inside directories
 # Note that the code does NOT recurse into subdirectories
-for dir in ["modules","snippets","builds"]:
+for dir in ["modules","builds"]:
     for entry in os.scandir(dir):
         if entry.is_dir():
             continue
